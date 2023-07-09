@@ -1,0 +1,144 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{%block body%}
+<section class="ielts">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+ <!-- carousoul -->
+
+   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+
+      <ol class="carousel-indicators cid">
+    {% comment %} <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li> {% endcomment %}
+    
+  </ol>
+
+
+  <div class="carousel-inner">
+    <!-- item -->
+    <div class="carousel-item active">
+    <div class="row">
+        <div class="col-md-5">
+        <div class="s-content">
+          <h1>IELTS International English Language Testing System</h1>
+          {% comment %} <h2>Guiding Students to Success: Your Future Starts Here</h2> {% endcomment %}
+          <p>In practically all nations, including the United States, the United Kingdom, Australia, Canada, and New Zealand, an IELTS score is required as proof of English language competency. The maximum band score is 9, and most colleges accept scores between 6.0 and 7.0 for undergraduate and graduate entrance. The IELTS test comes in two different formats.</p>
+  
+        </div>
+      </div>
+      <div class=" offset-md-2 col-md-5 d-md-block d-none">
+      <div class="s-imgielts">
+      <img src={% static 'images/ielts01.jpeg' %} class="img-fluid">
+      </div>
+      </div>
+    </div>
+    </div>
+    <!-- item -->
+    
+  </div>
+</div>
+<!-- carousoul end-->
+      </div>
+    </div>
+  </div>
+</section>
+<!--new -->
+<div class="feature_ielts">
+  <div class="container">
+    <!-- istrow -->
+    <div class="row">
+      <div class=" offset-md-1 col-md-10">
+        <div class="c-title text-center">
+          <h1 class="c-h1">All You Need To Know About IELTS </h1>
+          {% comment %} <p class="c-p">We’re dedicated to providing our customers with a wide range of services that meet their various needs. Our goal is to ensure that every customer receives excellent service and leaves completely satisfied. Here are the services we offer</p> {% endcomment %}
+        </div>
+      </div>
+    </div>
+    <!-- 2ndrow -->
+   <div class="row">    
+   <!-- singleitem -->
+  
+   <h1 class = "h1_i">Academic Module of IELTS </h1>
+   {% comment %} <h2>Guiding Students to Success: Your Future Starts Here</h2> {% endcomment %}
+   <p class = "p_i">The Academic module of the IELTS test determines if you have sufficient English language ability to enrol in a degree programme or professional training. Academic Module is required of students who wish to enrol in a university or other higher education institution.</p>
+         <span></span> 
+         <span></span> 
+         <span></span> 
+         <span></span> 
+    <h1 class = "h1_i">General Training Module</h1>
+   {% comment %} <h2>Guiding Students to Success: Your Future Starts Here</h2> {% endcomment %}
+   <p class = "p_i">In practically all nations, including the United States, the United Kingdom, Australia, Canada, and New Zealand, an IELTS score is required as proof of English language competency. The maximum band score is 9, and most colleges accept scores between 6.0 and 7.0 for undergraduate and graduate entrance. The IELTS test comes in two different formats.</p>
+         <span></span> 
+         <span></span> 
+         <span></span> 
+         <span></span> 
+    <h1 class = "h1_i">Test pattern</h1>
+         {% comment %} <h2>Guiding Students to Success: Your Future Starts Here</h2> {% endcomment %}
+         <p class = "p_i">The test consists of four parts: Listening, Reading, Writing, and Speaking.
+
+          In the Listening section, there are four sections to assess your ability to understand spoken English. It lasts for about 30 minutes.
+          
+          The Reading section includes three passages that you need to read and comprehend. You will have 60 minutes to complete this section.
+          
+          In the Writing section, you will be given two tasks to complete within 60 minutes. These tasks may include writing an essay or summarizing information.
+          
+          The Speaking section involves an interview that lasts for 10-15 minutes. You will be evaluated on your ability to communicate orally in English and express your thoughts clearly.
+          
+          Overall, the test evaluates your listening, reading, writing, and speaking skills in English through a variety of tasks and formats.</p>
+        </div>
+       </div>
+     </div>
+     
+     <!-- singleitem -->
+   </div>
+ </div>
+</div>
+<!-- secondend -->
+
+<!--Ielts course section start -->
+
+
+<ul class="cards">
+  <li class="cards__item">
+    <div class="card">
+      <div class="card__image ">
+        <img src={% static 'images/regular.jpeg' %} class="img_ielts_course">
+      </div>
+      <div class="card__content">
+        <div class="card__title">IELTS regular </div>
+        <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
+        <button class="btn btn--block card__btn">Enroll Now</button>
+      </div>
+    </div>
+  </li>
+  <li class="cards__item">
+    <div class="card">
+      <div class="card__image ">
+        <img src={% static 'images/biginar.jpeg' %} class="img_ielts_course">
+      </div>
+      <div class="card__content">
+        <div class="card__title">IELTS Basic </div>
+        <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
+        <button class="btn btn--block card__btn">Enroll Now</button>
+      </div>
+    </div>
+  </li>
+  <li class="cards__item">
+    <div class="card">
+      <div class="card__image ">
+        <img src={% static 'images/crush.jpeg' %} class="img_ielts_course">
+      </div>
+      <div class="card__content">
+        <div class="card__title">Crash course </div>
+        <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative numbers are invalid.</p>
+        <button class="btn btn--block card__btn">Enroll Now</button>
+      </div>
+    </div>
+  </li>
+ 
+</ul>
+<!--Ielts course  section start end -->
+
+{%endblock%}

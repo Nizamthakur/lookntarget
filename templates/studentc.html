@@ -1,0 +1,147 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{%block body%}
+<!-- info start-->
+<section class="about-section">
+    <div class="container">
+        <div class="row clearfix">
+            
+            <!--Content Column-->
+            <div class="content-column col-md-6 col-sm-12 col-xs-12">
+                <div class="inner-column">
+                    <div class="sec-title">
+                        <div class="title"><h2>Your Gateway to Global Education</h2></div>
+                        <h2></h2>
+                    </div>
+                    <div class="text">Guiding students towards success. Harnessing our expertise in education, we provide personalized guidance, educational resources, and visa services. Empowering students to achieve their academic aspirations and unlock their full potential. </div>
+                    <div class="email">Request Quote: <span class="theme_color">studentconsultancy@lookntarget.com</span></div>
+                    {% comment %} <a href="about.html" class="theme-btn btn-style-three">Read More</a> {% endcomment %}
+                </div>
+            </div>
+            
+            <!--Image Column-->
+            <div class="image-column col-md-6 col-sm-12 col-xs-12">
+                <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="image">
+                        <img src="{% static 'images/student.jpg' %}"alt="">
+                        <div class="overlay-box">
+                            <div class="year-box"><span class="number">5</span>Years <br> Experience <br> Working</div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- info end-->
+<!-- student review-->
+
+<h1 class = "rh1">Our students share their stories...</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+  <div class="blog-card blog-card-blog">
+    <div class="blog-card-image">
+        <a href="#"> <img class="img" src="{% static 'images/t.jpg' %}"> </a>
+        <div class="ripple-cont"></div>
+    </div>
+    <div class="blog-table">
+        <h6 class="blog-category blog-text-success"><i class="far fa-newspaper"></i> News</h6>
+        <h4 class="blog-card-caption">
+            <a href="#">Lorem Ipsum is simply dummy text of the printing and</a>
+        </h4>
+        <p class="blog-card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="ftr">
+            <div class="author">
+                {% comment %} <a href="#"> <img src="https://picsum.photos/id/1005/5760/3840" alt="..." class="avatar img-raised"> <span>Lorem</span> </a> {% endcomment %}
+            </div>
+            <div class="stats"> <i class="far fa-clock"></i> 10 min </div>
+        </div>
+    </div>
+</div>
+</div>
+    
+    
+    <div class="col-md-4">
+  <div class="blog-card blog-card-blog">
+    <div class="blog-card-image">
+        <a href="#"> <img class="img" src="{% static 'images/t.jpg' %}"> </a>
+        <div class="ripple-cont"></div>
+    </div>
+    <div class="blog-table">
+        <h6 class="blog-category blog-text-success"><i class="fas fa-blog"></i> News</h6>
+        <h4 class="blog-card-caption">
+            <a href="#">Lorem Ipsum is simply dummy text of the printing and</a>
+        </h4>
+        <p class="blog-card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="ftr">
+            <div class="author">
+                {% comment %} <a href="#"> <img src="https://picsum.photos/id/1005/5760/3840" alt="..." class="avatar img-raised"> <span>Lorem</span> </a> {% endcomment %}
+            </div>
+            <div class="stats"> <i class="far fa-clock"></i> 10 min </div>
+        </div>
+    </div>
+</div>
+</div>
+    
+    <div class="col-md-4">
+  <div class="blog-card blog-card-blog">
+    <div class="blog-card-image">
+        <a href="#"> <img class="img" src="{% static 'images/t.jpg' %}"> </a>
+        <div class="ripple-cont"></div>
+    </div>
+    <div class="blog-table">
+        <h6 class="blog-category blog-text-success"><i class="far fa-newspaper"></i> News</h6>
+        <h4 class="blog-card-caption">
+            <a href="#">Lorem Ipsum is simply dummy text of the printing and</a>
+        </h4>
+        <p class="blog-card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="ftr">
+            <div class="author">
+                {% comment %} <a href="#"> <img src="https://picsum.photos/id/1005/5760/3840" alt="..." class="avatar img-raised"> <span>Lorem</span> </a> {% endcomment %}
+            </div>
+            <div class="stats"> <i class="far fa-clock"></i> 10 min </div>
+        </div>
+    </div>
+</div>
+</div>
+  </div>
+</div>
+
+        
+<!-- student review end-->
+
+<!--contact us section start-->
+<div class="container">  
+    <form id="contact" action="" method="post">
+      <h3>Quick Contact</h3>
+      <h4>Contact us today, and get reply with in 24 hours!</h4>
+      <fieldset>
+        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your preferred study destination" type="tel" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="When do you plan to study?" type="tel" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+    </form>
+   
+    
+  </div>
+<!--contact us section end-->
+{%endblock%}

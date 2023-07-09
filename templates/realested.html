@@ -1,0 +1,77 @@
+{% extends 'base.html' %} 
+{% load static %}
+{%block body%}
+<section class="real">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+ <!-- carousoul -->
+
+   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+
+      <ol class="carousel-indicators cid">
+    {% comment %} <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li> {% endcomment %}
+    
+  </ol>
+
+
+  <div class="carousel-inner">
+    <!-- item -->
+    <div class="carousel-item active">
+    <div class="row">
+        <div class="col-md-5">
+        <div class="s-content">
+          <h1>Look N target : Where Your Home Begins.</h1>
+          {% comment %} <h2>Guiding Students to Success: Your Future Starts Here</h2> {% endcomment %}
+          <p>“LooknTarget is your go-to website for all your land buying and selling needs. We offer a hassle-free process that allows you to sell or buy land with ease. To get started, simply provide us with your contact information, including your phone number, email address, and street address. We’ll also need information on your land, including its total gross area in either square feet or acres, and a clear image of your land. Once we receive your information, our team will get in touch with you to arrange a visit and discuss pricing. Trust LooknTarget to help you buy or sell your land today!”</p>
+  
+        </div>
+      </div>
+      <div class=" offset-md-2 col-md-5 d-md-block d-none">
+      <div class="s-imgielts">
+      <img src={% static 'images/land.jpg' %} class="img-fluid">
+      </div>
+      </div>
+    </div>
+    </div>
+    <!-- item -->
+    
+  </div>
+</div>
+<!-- carousoul end-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--sell your land here form-->
+<div class="container">  
+  <form id="contact" action="" method="post">
+    <h3>sell or buy your land here</h3>
+    <h4>Get the best price, easy and affordable </h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Location " type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Description" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+ 
+  
+</div>
+{%endblock%}
